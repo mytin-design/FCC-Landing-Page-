@@ -1,0 +1,220 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+body {
+    background: #eee;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+#header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background: #eee;
+
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+}
+
+#header-img {
+    width: 80%;
+}
+
+#nav-bar {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#main {
+    margin: 100px auto;
+    width: 70%;
+    padding: 20px;
+    height: 100%;
+}
+
+.form-control {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+#email {
+    height: 25px;
+    width: 90%;
+}
+
+#submit {
+    width: 50%;
+    height: 30px;
+    font-weight: 900;
+    font-size: 16px;
+    background-color: #f1c40f;
+    text-transform: uppercase;
+    border: none;
+
+}
+
+#features {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    gap: 30px;
+    margin-top: 70px;
+    font-size: 16px;
+}
+
+.this {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxing > h2 {
+    line-height: 0px;
+}
+.boxing {
+    width: 80%;
+}
+
+
+.fa {
+    color: orange; 
+}
+
+.video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#pricing {
+    margin-top: 30px;
+    display: flex;
+    height: 350px;
+    gap: 20px;
+
+}
+
+.box-price {
+    border: 1px solid;
+    display: flex;
+    width: 30%;
+    flex-flow: column;
+    align-items: center;
+}
+
+.price-title {
+    background-color: rgb(226, 225, 225);
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    height: 35px;
+    padding-top: 15px;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.price-text {
+    text-align: center;
+}
+
+#select {
+    background-color: #f1c40f;
+    padding: 10px;
+    width: 30%;
+    border: none;
+}
+
+.btn:hover {
+    animation-name: slow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slow {
+    100% {
+        background-color: orange;
+    }
+}
+
+#footer {
+    display: flex;
+    align-items: flex-end;
+    width: 96%;
+    height: 100px;
+    flex-flow: column;
+    margin-top: 40px;
+    background-color: rgb(196, 194, 194);
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+/* mobile design */
+
+@media screen and (max-width:900px) {
+    #pricing {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .box-price {
+        width: 70%;
+        padding: 5px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+    #form {
+        width: 100%;
+    }
+    #submit {
+        width: 30%;
+    }
+    #email {
+        width: 50%;
+    }
+
+    #footer {
+        position: absolute;
+        top: 135rem;
+        left: 0%;
+        width: 100%;
+    }
+}
